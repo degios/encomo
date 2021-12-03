@@ -13795,20 +13795,17 @@ a2v:function a2v(){},
 nD:function nD(a){this.a=a},
 Pd:function Pd(a,b){var _=this
 _.d=a
-_.a=null
+_.e=""
+_.a=_.x=_.r=_.f=null
 _.b=b
 _.c=null},
-agH:function agH(a,b){this.a=a
-this.b=b},
+agH:function agH(a){this.a=a},
 agG:function agG(){},
-agI:function agI(a,b){this.a=a
-this.b=b},
+agI:function agI(a){this.a=a},
 agF:function agF(){},
-agJ:function agJ(a,b){this.a=a
-this.b=b},
+agJ:function agJ(a){this.a=a},
 agE:function agE(){},
-agK:function agK(a,b){this.a=a
-this.b=b},
+agK:function agK(a){this.a=a},
 agD:function agD(){},
 agL:function agL(a){this.a=a},
 G7:function G7(){},
@@ -43938,83 +43935,88 @@ R.nC.prototype={}
 N.nD.prototype={
 aq(){return new N.Pd(new N.b6(null,t.z2),C.k)}}
 N.Pd.prototype={
-H(a,b){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g={},f=t.Wc.a(T.oy(b,t.X).b.b),e=g.a=f.a
-g.b=f.b
-s=f.c
-g.c=s==null?0:s
-r=f.d
-g.d=r==null?0:r
-q=e==="G"
-if(q){i.a.toString
-p="Gas "+"Consumption".toLowerCase()}else if(e==="E"){i.a.toString
-p="Electric "+"Consumption".toLowerCase()}else{p=i.a
-if(e==="W"){p.toString
-p="Water "+"Consumption".toLowerCase()}else{p.toString
-p="Consumption"}}p=E.wk(h,h,h,L.by(p,h,h,h,h,h,h))
-o=t.w8
-o=H.a([new A.lS(L.by("Gas",h,h,h,h,h,h),"G",h,o),new A.lS(L.by("Electric",h,h,h,h,h,h),"E",h,o),new A.lS(L.by("Water",h,h,h,h,h,h),"W",h,o)],t.xt)
-if(q)q=C.d1
-else if(e==="E")q=C.cr
-else q=e==="W"?C.c7:h
-n=t.N
-q=E.aH6(C.GL,e==="",e,"category",new N.agH(g,i),o,q,n)
-o=H.c6(1970,1,1,0,0,0,0,!1)
-if(!H.bm(o))H.d(H.bF(o))
-m=H.c6(2030,1,1,0,0,0,0,!1)
-if(!H.bm(m))H.d(H.bF(m))
-l=A.aGt("yyyy-MM-dd",h)
-k=g.b
-j=t.ES
-j=U.aH7(C.GJ,g.a!=="",new P.aQ(o,!1),l,k,new P.aQ(m,!1),"range",new N.agI(g,i),K.aq1(H.a([K.aq2(b,j)],t.I_),j))
-m=t.MS
-k=K.aq1(H.a([K.aq2(b,n),K.av3(b),K.av2(b,0.001,n),K.av1(b,9999,n)],m),n)
-o=C.d.j(g.c)
-k=S.av0(C.GK,g.a!=="",o,C.yy,"quantity",new N.agJ(g,i),k)
-n=K.aq1(H.a([K.aq2(b,n),K.av3(b),K.av2(b,0.01,n),K.av1(b,9999,n)],m),n)
-o=C.d.j(g.d)
-m=t.p
-n=T.e0(H.a([q,j,k,S.av0(C.GI,g.a!=="",o,C.yy,"amount",new N.agK(g,i),n)],m),C.a2,C.a1,C.a3)
-g=g.a
-q=g==="G"
+H(a,b){var s,r,q,p,o,n,m,l=this,k=null,j=t.Wc.a(T.oy(b,t.X).b.b),i=l.e
+if(i===""){i=l.e=j.a
+l.f=j.b
+l.r=j.c
+l.x=j.d}if(i==="G"){l.a.toString
+i="Gas "+"Consumption".toLowerCase()}else if(i==="E"){l.a.toString
+i="Electric "+"Consumption".toLowerCase()}else{s=l.a
+if(i==="W"){s.toString
+i="Water "+"Consumption".toLowerCase()}else{s.toString
+i="Consumption"}}i=E.wk(k,k,k,L.by(i,k,k,k,k,k,k))
+s=t.w8
+s=H.a([new A.lS(L.by("Gas",k,k,k,k,k,k),"G",k,s),new A.lS(L.by("Electric",k,k,k,k,k,k),"E",k,s),new A.lS(L.by("Water",k,k,k,k,k,k),"W",k,s)],t.xt)
+r=l.e
+if(r==="G")q=C.d1
+else if(r==="E")q=C.cr
+else q=r==="W"?C.c7:k
+p=t.N
+q=E.aH6(C.GL,j.a==="",r,"category",new N.agH(l),s,q,p)
+s=H.c6(1970,1,1,0,0,0,0,!1)
+if(!H.bm(s))H.d(H.bF(s))
+r=H.c6(2030,1,1,0,0,0,0,!1)
+if(!H.bm(r))H.d(H.bF(r))
+o=A.aGt("yyyy-MM-dd",k)
+n=l.f
+m=t.ES
+m=U.aH7(C.GJ,l.e!=="",new P.aQ(s,!1),o,n,new P.aQ(r,!1),"range",new N.agI(l),K.aq1(H.a([K.aq2(b,m)],t.I_),m))
+r=t.MS
+n=K.aq1(H.a([K.aq2(b,p),K.av3(b),K.av2(b,0.001,p),K.av1(b,9999,p)],r),p)
+o=l.r
+s=o==null?k:C.d.j(o)
+if(s==null)s=""
+n=S.av0(C.GK,l.e!=="",s,C.yy,"quantity",new N.agJ(l),n)
+p=K.aq1(H.a([K.aq2(b,p),K.av3(b),K.av2(b,0.01,p),K.av1(b,9999,p)],r),p)
+r=l.x
+s=r==null?k:C.d.j(r)
+if(s==null)s=""
+r=t.p
+p=T.e0(H.a([q,m,n,S.av0(C.GI,l.e!=="",s,C.yy,"amount",new N.agK(l),p)],r),C.a2,C.a1,C.a3)
+s=l.e
+q=s==="G"
 if(q)o="gas consumption"
-else if(g==="E")o="electric consumption"
-else o=g==="W"?"water consumption":"consumption"
-o=L.by("Submit a "+o,h,h,h,C.kj,h,h)
-if(q)l=C.ff
-else if(g==="E")l=C.fe
-else l=g==="W"?C.fc:C.fd
-if(q)g=C.d1
-else if(g==="E")g=C.cr
-else g=g==="W"?C.c7:K.ao(b).p.c
-g=A.Gm(h,h,new V.cF(g,t.FT),h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h)
-return M.p0(p,h,K.aqQ(C.aX,T.hU(new T.cG(C.dL,T.e0(H.a([new O.xJ(n,C.i5,i.d),T.fQ(H.a([T.dd(new D.Qg(new N.agL(i),h,g,C.p,h,!1,new D.Qh(o,l,h),h),1)],m),C.a2,C.a1,C.a3)],m),C.a2,C.a1,C.a3),h),h,h),h,C.yc),h,h,h)}}
+else if(s==="E")o="electric consumption"
+else o=s==="W"?"water consumption":"consumption"
+o=L.by("Submit a "+o,k,k,k,C.kj,k,k)
+if(q)n=C.ff
+else if(s==="E")n=C.fe
+else n=s==="W"?C.fc:C.fd
+if(q)s=C.d1
+else if(s==="E")s=C.cr
+else s=s==="W"?C.c7:K.ao(b).p.c
+s=A.Gm(k,k,new V.cF(s,t.FT),k,k,k,k,k,k,k,k,k,k,k,k,k,k,k,k)
+return M.p0(i,k,K.aqQ(C.aX,T.hU(new T.cG(C.dL,T.e0(H.a([new O.xJ(p,C.i5,l.d),T.fQ(H.a([T.dd(new D.Qg(new N.agL(l),k,s,C.p,k,!1,new D.Qh(o,n,k),k),1)],r),C.a2,C.a1,C.a3)],r),C.a2,C.a1,C.a3),k),k,k),k,C.yc),k,k,k)}}
 N.agH.prototype={
-$1(a){this.a.a=J.cZ(a)
-this.b.a3(new N.agG())},
+$1(a){var s=this.a
+s.e=J.cZ(a)
+s.a3(new N.agG())},
 $S:6}
 N.agG.prototype={
 $0(){},
 $S:0}
 N.agI.prototype={
-$1(a){var s,r=this.b,q=r.d.gaM()
-if(q==null)s=null
-else{q=q.e.i(0,"range")
-s=q==null?null:q.gmp()}this.a.b=s
-r.a3(new N.agF())},
+$1(a){var s=this.a,r=s.d.gaM()
+if(r==null)r=null
+else{r=r.e.i(0,"range")
+r=r==null?null:r.gmp()}s.f=r
+s.a3(new N.agF())},
 $S:180}
 N.agF.prototype={
 $0(){},
 $S:0}
 N.agJ.prototype={
-$1(a){this.a.c=P.anY(J.cZ(a))
-this.b.a3(new N.agE())},
+$1(a){var s=this.a
+s.r=P.anY(J.cZ(a))
+s.a3(new N.agE())},
 $S:78}
 N.agE.prototype={
 $0(){},
 $S:0}
 N.agK.prototype={
-$1(a){this.a.d=P.anY(J.cZ(a))
-this.b.a3(new N.agD())},
+$1(a){var s=this.a
+s.x=P.anY(J.cZ(a))
+s.a3(new N.agD())},
 $S:78}
 N.agD.prototype={
 $0(){},
